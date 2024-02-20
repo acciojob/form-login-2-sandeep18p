@@ -1,12 +1,10 @@
-function submitForm() {
-            const firstName = document.getElementById("firstName").value;
-            const lastName = document.getElementById("lastName").value;
-            const phoneNumber = document.getElementById("phoneNumber").value;
-            const email = document.getElementById("email").value;
+//your JS code here. If required.
+function getFormvalue() {
+            var firstName = document.querySelector('input[name="First Name"]').value;
+            var lastName = document.querySelector('input[name="Last Name"]').value;
+            var phoneNumber = document.querySelector('input[name="Phone Number"]').value;
+            var emailID = document.querySelector('input[name="Email ID"]').value;
 
-            const alertMessage = `First Name: ${firstName} Last Name: ${lastName} Phone Number: ${phoneNumber} Email ID: ${email}`;
+            var alertMessage = "First Name: " + firstName + " Last Name: " + lastName + " Phone Number: " + phoneNumber + " Email ID: " + emailID;
             alert(alertMessage);
-
-            // // Returning false prevents form submission
-            // return false;
         }
